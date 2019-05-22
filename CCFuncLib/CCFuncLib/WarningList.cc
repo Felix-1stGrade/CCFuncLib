@@ -122,6 +122,12 @@ void CWarningList::Delete(string Id)
 	HistoryListChanged = true;
 }
 
+// 清空历史告警列表
+void CWarningList::ClearHistoryList(void)
+{
+	HistoryList.clear();
+}
+
 CWarningList WarningList;
 
 /// end of file

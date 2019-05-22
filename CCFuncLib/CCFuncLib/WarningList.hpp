@@ -105,10 +105,11 @@ public:
 	CWarningList(void);
 	~CWarningList(void);
 
-	void Init(void);
-	void Add(string Id);
-	void Delete(string Id);
-	void Clear(void);
+	void Init(void);             ///< 告警列表初始化
+	void Add(string Id);         ///< 添加告警到当前告警列表
+	void Delete(string Id);      ///< 从当前告警列表删除告警，并添加到历史告警列表
+	void Clear(void);            ///< 清空当前告警列表和历史告警列表
+	void ClearHistoryList(void); ///< 清空历史告警列表
 };
 
 extern CWarningList WarningList;

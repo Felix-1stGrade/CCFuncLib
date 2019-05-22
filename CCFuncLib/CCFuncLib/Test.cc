@@ -35,6 +35,7 @@ int main()
 	WarningList.Delete("0001-01");
 	WarningList.Add("0008-01");
 	WarningList.Add("0005-03");
+	WarningList.ClearHistoryList();
 	WarningList.Clear();
 
 	// list≤‚ ‘
